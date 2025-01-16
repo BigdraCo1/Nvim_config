@@ -32,6 +32,7 @@ lspconfig.rust_analyzer.setup({
   on_attach = on_attach,
   capabilities = capabilities,
   filetypes = {"rust"},
+  cmd = {"rust-analyzer"},
   root_dir = util.root_pattern("Cargo.toml"),
   settings = {
     ['rust_analyzer'] = {
@@ -41,6 +42,7 @@ lspconfig.rust_analyzer.setup({
     },
   },
 })
+
 
 lspconfig.gopls.setup {
   on_attach = on_attach,
